@@ -44,4 +44,6 @@ import string
 a=string.ascii_lowercase
 
 for x in a:
-    text.count(x)
+    number=text.count(x)
+    if number>0: 
+        print(number*x)
