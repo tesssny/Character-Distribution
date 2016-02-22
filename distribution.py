@@ -38,3 +38,7 @@ Notice about this example:
 """
 text=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+text+'" is:')
+
+import string
+
+string.ascii_lowercase
