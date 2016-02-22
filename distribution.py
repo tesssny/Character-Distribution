@@ -41,4 +41,7 @@ print('The distribution of characters in "'+text+'" is:')
 
 import string
 
-string.ascii_lowercase
+a=string.ascii_lowercase
+
+for x in a:
+    text.count(x)
