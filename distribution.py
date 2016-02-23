@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: tess snyder
+Credit: http://www.tutorialspoint.com/python/python_tuples.htm
 
 Assignment:
 
@@ -50,7 +50,13 @@ for x in a:
     if number>0: 
         countlist.append((number,x))
 
+
 countlist.sort()
 countlist.reverse()
 print(countlist)
+
+for x in countlist:
+    print(x[1]*x[0])
+        
+
 
