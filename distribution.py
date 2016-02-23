@@ -46,4 +46,9 @@ a=string.ascii_lowercase
 for x in a:
     number=text.count(x)
     if number>0: 
-        print(number*x)
+        countlist.append((number,x))
+
+countlist.sort()
+countlist.reverse()
+print(countlist)
+
