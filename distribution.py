@@ -43,6 +43,8 @@ import string
 
 a=string.ascii_lowercase
 
+countlist=[]
+
 for x in a:
     number=text.count(x)
     if number>0: 
