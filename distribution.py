@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: tess snyder
-Credit: http://www.tutorialspoint.com/python/python_tuples.htm
+Credit: http://www.tutorialspoint.com/python/python_tuples.htm, http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/, Mary feyrer, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
 
 Assignment:
 
@@ -39,6 +39,8 @@ Notice about this example:
 text=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+text+'" is:')
 
+text=text.lower()
+
 import string
 
 a=string.ascii_lowercase
@@ -50,11 +52,16 @@ for x in a:
     if number>0: 
         countlist.append((x,number))
 
+def getKey(item):
+    return(item[0])
+countlist=sorted(countlist, key=getKey)
 
 def getKey(item):
     return item[1]
 countlist=sorted(countlist, key=getKey)
 countlist.reverse()
+
+
 
 for x in countlist:
     print(x[1]*x[0])
