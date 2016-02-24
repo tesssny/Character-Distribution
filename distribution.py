@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: tess snyder
-Credit: http://www.tutorialspoint.com/python/python_tuples.htm, http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/, Mary feyrer, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python
+Credit: http://www.tutorialspoint.com/python/python_tuples.htm, http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/, Mary feyrer, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python, http://stackoverflow.com/questions/5212870/sorting-a-python-list-by-two-criteria
 
 Assignment:
 
@@ -52,15 +52,7 @@ for x in a:
     if number>0: 
         countlist.append((x,number))
 
-def getKey(item):
-    return(item[0])
-countlist=sorted(countlist, key=getKey)
-
-def getKey(item):
-    return item[1]
-countlist=sorted(countlist, key=getKey)
-countlist.reverse()
-
+countlist = sorted(countlist, key=lambda x: (-x[1], x[0]))
 
 
 for x in countlist:
