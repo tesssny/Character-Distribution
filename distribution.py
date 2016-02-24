@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: tess snyder
-Credit: http://www.tutorialspoint.com/python/python_tuples.htm, http://pythoncentral.io/how-to-sort-a-list-tuple-or-object-with-sorted-in-python/, Mary feyrer, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python, http://stackoverflow.com/questions/5212870/sorting-a-python-list-by-two-criteria
+Credit: Mary feyrer, http://stackoverflow.com/questions/6797984/how-to-convert-string-to-lowercase-in-python, http://stackoverflow.com/questions/5212870/sorting-a-python-list-by-two-criteria
 
 Assignment:
 
