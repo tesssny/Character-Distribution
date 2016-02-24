@@ -48,12 +48,13 @@ countlist=[]
 for x in a:
     number=text.count(x)
     if number>0: 
-        countlist.append((number,x))
+        countlist.append((x,number))
 
 
-countlist.sort()
+def getKey(item):
+    return item[1]
+countlist=sorted(countlist, key=getKey)
 countlist.reverse()
-print(countlist)
 
 for x in countlist:
     print(x[1]*x[0])
